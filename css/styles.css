@@ -1,0 +1,603 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #2a8c4a;
+    text-align: center;
+    color: white;
+    font-family: 'Brush Script MT';
+    font-size: 40px;
+    text-shadow: 4px 4px 5px Black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+nav {
+    background-color: #64c27b;
+    text-align: center;
+    padding: 3px 0px 6px 0px;
+    text-shadow: 2px 2px 3px black;
+}
+
+nav a {
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/*-------------------------- Tab --------------------------*/
+.tab {
+    overflow: hidden;
+    background-color: #d0fdd7;
+    text-align: center;
+}
+
+.tab button {
+    background-color: inherit;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    margin: 0px 50px;
+    padding: 14px 20px;
+    transition: 0.3s;
+    background-color: #9bfab0;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: rgb(220, 220, 220);
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    color: black;
+    font-size: 19px;
+    text-align: center;
+}
+
+/*---------------------------------------------------*/
+
+#container {
+    background-color: #d0fdd7;
+    padding: 50px 80px 130px 80px;
+    color: black;
+}
+
+#area-mapa {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    border: 2px solid #ccc;
+}
+
+#div-erro {
+    background-color: firebrick;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    display: none;
+    margin: 0px 10px 10px 0px;
+    display: none;
+}
+
+#grafico-pizza {
+    width: 100%;
+    height: 500px;
+}
+
+#dadosTabela {
+    width: 100%;
+    background-color: #9bfab0;
+}
+
+#caixa-incial {
+    width: 100%;
+    display: flex;
+    background-color: #9bfab0;
+    margin-top: 110px;
+    border: 1px solid rgb(128, 128, 128, 0.564);
+    text-align: center;
+}
+
+#img-inicial {
+    width: 50%;
+}
+
+#texto-incial {
+    width: 50%;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 90px;
+
+}
+
+#texto-incial h2 {
+    margin-top: 30px;
+}
+
+#texto-incial p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 20px 0px 20px;
+    font-size: 20px;
+}
+
+#btnSaibaMais {
+    width: 120px;
+    height: 40px;
+    margin-top: 40px;
+    margin-right: 5px;
+    background-color: #64c27b;
+    border: 1px solid #adadad;
+    cursor: pointer;
+}
+
+#btnSaibaMais a {
+    color: inherit;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+#btnSaibaMais:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/*--------------------------------- sobre.html -----------------------------------*/
+
+#teste {
+    display: flex;
+    width: 100%;
+}
+
+#texto {
+    width: 60%;
+    margin-top: -40px;
+}
+
+#texto p {
+    color: black;
+}
+
+#covid {
+    width: 80%;
+    height: 400px;
+    float: right;
+    margin-top: 20px;
+}
+
+#covid2 {
+    width: 80%;
+    height: 500px;
+    float: right;
+    margin-top: 20px;
+}
+
+#texto p {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: auto;
+    font-size: 17px;
+
+}
+
+#texto h1 {
+    text-align: center;
+    color: #2a8c4a;
+    margin-top: 70px;
+}
+
+#texto h2 {
+    color: #2a8c4a;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*--------------------------------- equipe.html -----------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #474e5d;
+    font-family: Helvetica, sans-serif;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #2a8c4a;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+    width: 625px;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+
+.content {
+    padding: 20px 30px;
+    background-color: #9bfab0;
+    position: relative;
+    border-radius: 6px;
+    display: flex;
+}
+
+#texto-esquerda {
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+/*-------------- Footer -------------- */
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    background-color: #64c27b;
+    color: white;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+
+
+
+/*--------------------------------------------*/
+/* Responsividade pra celular */
+@media (max-width: 767px) {
+    body {
+        font-size: 22px;
+    }
+
+    header {
+        font-size: 32px;
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 3px;
+    }
+
+    /*---------------responsividade index.html-----------------*/
+
+    #area-mapa {
+        height: 400px;
+    }
+
+    #grafico-pizza {
+        height: 400px;
+    }
+
+    #Tabela {
+        width: 200px;
+    }
+
+    #dadosTabela {
+        font-size: 12px;
+        margin-left: -68px;
+    }
+
+
+    .tab {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tab button {
+        width: 140px;
+        padding-bottom: 10px;
+        margin: 0px 50px 8px;
+    }
+
+    #div-erro {
+        width: 240px;
+        font-size: 18px;
+    }
+
+    #caixa-inicial {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #img-inicial {
+        display: none;
+    }
+
+    #texto-incial {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #texto-incial h2 {
+        margin-top: 0 auto;
+        font-size: 22px;
+    }
+
+    #btnSaibaMais {
+        margin: 50px 0px 50px 0px;
+    }
+
+    /*---------------responsividade sobre.html----------------*/
+
+    #teste {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #texto h1 {
+        font-size: 30px;
+        margin-top: 40px;
+        margin-left: -26px;
+    }
+
+    #texto h2 {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    #texto p {
+        margin-top: 30px;
+        font-size: 17px;
+        justify-content: center;
+
+    }
+
+    #covid {
+        display: none;
+
+    }
+
+    /*---------------responsividade equipe.html----------------*/
+
+    .timeline {
+        position: relative;
+        max-width: 767px;
+        margin: 0 auto;
+    }
+
+    .timeline::after {
+        margin-left: -150px;
+        float: left;
+    }
+
+    .container.right {
+        width: 100%;
+    }
+
+    .container.left {
+        width: 100%;
+    }
+
+    .container.right .content {
+        width: 272.5px;
+        left: -33px;
+        display: flex;
+        margin-left: 33px;
+    }
+
+    .container.left .content {
+        width: 272.5px;
+        left: -33px;
+        display: flex;
+    }
+
+    .left::after {
+        left: -48px;
+    }
+
+    .left {
+        left: 0;
+    }
+
+    .right {
+        left: -33px;
+    }
+
+    .left::before {
+        display: none;
+    }
+
+    .right::before {
+        display: none;
+    }
+
+    .content {
+        width: 50%;
+        height: 100px;
+        display: flex;
+    }
+
+    #texto-esquerda {
+        margin: 0px 0px 0px 0px;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .cristiano-nome p {
+        margin-top: 8px;
+    }
+
+}
+
+
+/*Responsividade para tablet */
+@media (max-width: 991px) {
+
+    header {
+        font-size: 50px;
+    }
+
+    nav {
+        font-size: 30px;
+    }
+
+/*----------------------------------------------------------------*/
+
+    #container {
+        flex-direction: column;
+    }
+
+    #img-inicial {
+        width: 50%;
+    }
+
+    #texto-inicial {
+        width: 600px;
+    }
+
+    #texto-inicial h2 {
+        font-size: 25px;
+    }
+
+    #btnSaibaMais {
+        margin: 60px 0px 60px 0px;
+    }
+
+    #texto h2{
+        font-size: 35px;
+    }
+
+    #covid {
+        margin-top: 200px;
+    }
+
+    #covid2 {
+        margin-top: 350px;
+    }
+
+    /*----------------------------------------------------------------*/
+
+    #div-teste {
+        margin: 100px 0px 50px 0px;
+    }
+
+    .content {
+        width: 100%;
+        height: 140px;
+        display: flex;
+    }
+
+    .container.right {
+        width: 340px;
+    }
+
+    .container.right .content {
+        width: 340px;
+        left: -33px;
+        display: flex;
+        margin-left: 33px;
+    }
+
+    .container.left .content {
+        width: 340px;
+        left: -100px;
+        display: flex;
+    }
+
+    #texto-esquerda {
+        margin: 0px 0px 0px 0px;
+        font-size: 24px;
+        margin-left: 30px;
+    }
+
+    .cristiano-nome p {
+        margin-top: 16px;
+    }
+}

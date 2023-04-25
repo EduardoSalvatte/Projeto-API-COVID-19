@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type=text/css href="../css/styles.css" />
+    <title>Projeto API COVID-19</title>
+</head>
+
+<body>
+    <header>
+        Projeto API COVID-19
+    </header>
+    <nav>
+        <a href="index.html">Página Inicial</a>
+        <a href="sobre.html">Introdução</a>
+        <a href="equipe.html">Equipe de Projeto</a>
+    </nav>
+    <div id="container">
+        <div id="div-erro">...</div>
+        <div class="tab">
+            <button class="tablinks" onclick="abrirInfo(event, 'Mapa'), carregarMapa()">Mapa</button>
+            <button class="tablinks" onclick="abrirInfo(event, 'Pizza'), carregarPizza()">Gráfico Pizza</button>
+            <button class="tablinks" onclick="abrirInfo(event, 'Tabela'), carregarDados()">Tabela</button>
+        </div>
+
+        <div id="Mapa" class="tabcontent">
+            <h3>Mapa</h3>
+            <div id="area-mapa" onclick="desenharMapa();">
+            </div>
+        </div>
+
+        <div id="Pizza" class="tabcontent">
+            <h3>Gráfico Pizza</h3>
+            <div id="grafico-pizza" onclick="desenharPizza();"></div>
+        </div>
+
+        <div id="Tabela" class="tabcontent">
+            <h3>Tabela</h3>
+            <table id="dadosTabela" onclick="prepararDados();">
+                <thead>
+                    <tr>
+                        <th>Sigla</th>
+                        <th>Estado</th>
+                        <th>Casos</th>
+                        <th>Mortes</th>
+                        <th>Suspeitos</th>
+                        <th>Descartados</th>
+                    </tr>
+                </thead>
+                <tbody id="linhas"></tbody>
+            </table>
+        </div>
+        <div id="caixa-incial">
+            <div id="texto-incial">
+                <h2>
+                    Bem vindo(a)
+                </h2>
+                </br>
+                <p>
+                    Nesse site você encontrará informações atualizadas sobre a covid 19.
+                    Nosso objetivo é ajudar a conscientizar a população e contribuir para a luta contra essa
+                    doença global. Acompanhe nossas atualizações e junte-se a nós nessa luta!
+                </p>
+                <div id="saiba-mais">
+                    <button id="btnSaibaMais">
+                        <a href="sobre.html">Saiba-mais</a>
+                    </button>
+                </div>
+            </div>
+            <img id="img-inicial" src="../img/img-pgn-inicial.png" alt="imagem">
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    <footer>
+        <p>
+            Projeto desenvolvido pelos aluno Eduardo Salvatte & Pyetro Santaterra do 2º Ensino Médio – 
+        Curso Técnico em Desenvolvimento de Sistemas.
+        </p>
+    </footer>
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="../js/scripts.js"></script>
+
+</html>

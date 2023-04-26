@@ -444,6 +444,10 @@ footer {
 
     }
 
+    #covid2 {
+        display: none;
+    }
+
     /*---------------responsividade equipe.html----------------*/
 
     .timeline {
